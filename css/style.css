@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400;1,600&family=Updock&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+.body{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#scoreBox{
+    position: absolute;
+    top: 58px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Finlandica', sans-serif;
+}
+#HiscoreBox{
+    position: absolute;
+    top: 9px;
+    right: 177px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Finlandica', sans-serif;
+}
+#board{
+    background: linear-gradient(rgb(147, 237, 147),rgb(235, 235, 126));
+    width: 90vmin;
+    height: 90vmin;
+    border: 3px solid rgb(19, 16, 16);
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+}
+.head{
+    background: linear-gradient(rgb(237, 237, 131), rgb(236, 130, 130));
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 8px;
+
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid rgb(12, 11, 11);
+    border-radius: 8px;
+
+}
